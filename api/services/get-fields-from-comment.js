@@ -1,4 +1,7 @@
 import fetch from 'node-fetch'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const FIELD_ID_MAP = {
   consult: 1444,

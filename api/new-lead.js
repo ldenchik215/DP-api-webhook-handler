@@ -43,6 +43,7 @@ async function webhookHandler(req, res) {
     }
 
     await updateFields(objectId, customFields, res)
+
     // 6. Отправляем успешный ответ
     // CRM получит статус 200 и поймет, что вебхук успешно обработан.
     res.status(200).json({ success: true, message: 'Webhook processed successfully' })
