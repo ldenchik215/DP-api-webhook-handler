@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/new-lead.js",
+      "destination": "/api/new-lead.js"
+    }
+  ]
+}
