@@ -1,7 +1,4 @@
 import fetch from 'node-fetch'
-import dotenv from 'dotenv'
-
-dotenv.config()
 
 async function updateFields(objectId, customFields, res) {
   try {
