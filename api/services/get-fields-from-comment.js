@@ -5,6 +5,10 @@ const FIELD_ID_MAP = {
   inform: 1445,
   bron: 1446,
   dogovor: 1447,
+  'Checkbox 2': 1444,
+  'Checkbox 3': 1445,
+  'Checkbox 4': 1446,
+  'Checkbox 5': 1447,
 }
 
 async function getFieldsFromComment(objectId, res) {
