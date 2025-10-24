@@ -63,7 +63,7 @@ async function getFieldsFromComment(objectId, res) {
           const fieldId = FIELD_ID_MAP[key]
 
           // 3. Конвертируем значение в число
-          const value = Number(valueStr)
+          const value = valueStr == 0 ? 0 : 1
 
           if (!isNaN(value)) {
             // 4. Добавляем в результат в новом формате {id, value}
