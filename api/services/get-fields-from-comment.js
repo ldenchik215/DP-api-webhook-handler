@@ -16,9 +16,9 @@ async function getFieldsFromComment(objectId, res) {
     const crmApiUrl = process.env.CRM_SERVER_URL
     const crmApiToken = process.env.CRM_API_TOKEN // Секретный токен для аутентификации
 
-    console.log(`Отправка GET-запроса на: ${crmApiUrl}/comments?object_id=${objectId}`)
+    console.log(`Отправка GET-запроса на: ${crmApiUrl}/comments?object_id=${objectId}&store=1`)
 
-    const response = await fetch(`${crmApiUrl}/comments?object_id=${objectId}`, {
+    const response = await fetch(`${crmApiUrl}/comments?object_id=${objectId}&store=1`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
